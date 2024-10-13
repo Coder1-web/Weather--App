@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s;
+    background: linear-gradient(to right, #a1c4fd, #c6ff00); /* Default background gradient */
+}
+
+#current-weather, #terms-content {
+    text-align: center; /* Centering text for both pages */
+    margin: 20px;
+}
+
+#terms-content {
+    background: rgba(255, 255, 255, 0.9); /* White background with transparency for terms page */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#terms-content h1, #terms-content h3 {
+    margin: 10px 0; /* Adding margin for spacing */
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center; /* Center align error message */
+}
+
+.sunrise-sunset-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.slider-bar {
+    position: relative;
+    width: 300px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#sun {
+    position: absolute;
+    top: 0;
+    height: 20px; /* Adjusted for emoji */
+    width: 20px;  /* Adjusted for emoji */
+    border-radius: 50%;
+    background-color: yellow;
+    left: 0; /* Initial position of the sun */
+    transition: left 5s ease-in-out; /* Animation for moving the sun */
+}
+
+#sunrise-label, #sunset-label {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.today-weather-box {
+    background-color: #f0f8ff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.day-forecast {
+    background-color: #e0f7fa;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.day-forecast:hover {
+    transform: scale(1.05);
+}
+
+/* Add this to your existing styles.css file */
+
+.button {
+    display: inline-block; /* Centering */
+    padding: 10px 20px; /* Button padding */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, transform 0.2s; /* Animation for color and scale */
+    margin: 20px auto; /* Center with margin */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}

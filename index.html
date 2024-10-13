@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="current-weather">
+        <h1 id="current-location"></h1>
+        <h2 id="current-temp"></h2>
+        <div id="current-icon"></div>
+        <p id="weather-description"></p>
+    </div>
+
+    <div class="sunrise-sunset-box">
+        <h3>Sunrise</h3>
+        <p id="sunrise-label"></p>
+        <div class="slider-bar">
+            <div id="sun">☀️</div>
+            <div id="moon" style="display: none;">🌑</div>
+        </div>
+        <h3>Sunset</h3>
+        <p id="sunset-label"></p>
+    </div>
+
+    <div id="today-weather"></div>
+    <div id="weekly-weather"></div>
+
+    <button id="view-terms">View Terms and Conditions</button>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("view-terms").onclick = function() {
+            window.location.href = "terms-and-conditions.html"; // Redirect to terms page
+        };
+    </script>
+</body>
+</html>
